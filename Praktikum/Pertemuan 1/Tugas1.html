@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <style>
+        input:focus, text, textarea{
+            outline: none;
+            border: 1px, solid, black, ;
+        }
+    </style>
+    <font type=TimesNewRoman size="7">
+        <strong>Form HTML</strong>
+    </font>
+    <br><br>
+    <font type=TimesNewRoman size="4">
+        <table>
+            <tr>
+                <td> Name:
+                <input type="text" name="nama">
+                <br><br></td>
+            </tr>
+            <tr>
+                <td> Gender:
+                <input type="radio" name="sex" value="pria"> Man
+                <input type="radio" name="sex" value="wanita"> Woman
+                <br><br></td>
+            </tr>
+            <tr>
+                <td> Address:
+                <input type="text" name="alamat">
+                <br><br></td>
+            </tr>
+            <tr>
+                <td> Country:
+                    <select name="negara">
+                        <option value="indonesia">Indonesia</option>
+                        <option value="malaysia">Malaysia</option>
+                        <option value="siangapur">Singapore</option>
+                        <option value="filipina">Philippines</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="inggris">United Kingdom</option>
+                        <option value="amerika">United States of America</option>
+                    </select>
+                <br><br></td>
+            </tr>
+            <tr>
+                <td> Email:
+                <input type="text" name="email">
+                <br><br></td>
+            </tr>
+            <tr>
+                <td> Photo:
+                <input type="text" inputmode="image" name="foto">
+                <input type="button" value="Browse.." name="cari">
+                <br><br></td>
+            </tr>
+                <form method="get">
+                    <td> Comment:
+                    <textarea name="komen" cols="70" rows="7"></textarea>
+                    <input type="submit" value="Submit" name="kirim">
+                    <br><br></td>
+                </form>
+            <tfoot>
+                <tr><td>
+                </font>
+                <font type=TimesNewRoman size="5" style="position: absolute; left: 280px;">Form Registrasi</font>
+                </td></tr>
+            </tfoot>
+        </table>
+</body>
+</html>
