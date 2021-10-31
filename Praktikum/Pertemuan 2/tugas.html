@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain Web CSS</title>
+    <link rel="icon" href="img/RP Alternative Color Scheme.png">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-image: url('img/little-nightmares-4k-six.jpg');
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size: 100% 700px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .opening_bg{
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            left: 0px;
+            top: 700px;
+        }
+        .project_bg{
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 1000px;
+            position: absolute;
+            left: 0px;
+            top: 1100px;
+        }
+        .about_bg{
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            height: 700px;
+            position: absolute;
+            left: 0px;
+            top: 2100px;
+        }
+        .footer{
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 150px;
+            position: absolute;
+            left: 0px;
+            top: 2800px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        ul{
+            list-style: circle;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak fadeRight" style="font-size: 35px; color: white;">
+        <h1>Build Your Own Website with Your Creativity</h1>
+        <a href="#" class="button2" style="position: absolute; bottom: 75px; left: 40px;">Learn More</a>
+    </div>
+
+    <a href=""><img src="img/RP Alternative Color Scheme.png" style="width: 35px; height: 35px; 
+        margin-top: 5px; margin-left: 10px;"></a>
+
+    <a href="#tentang" class="button" style="position: absolute; top: 20px; right: 40px;">About</a>
+    <a href="#kontak" class="button" style="position: absolute; top: 20px; right: 130px;">Contact</a>
+    <a href="#projek" class="button" style="position: absolute; top: 20px; right: 240px;">Projects</a>
+
+    <div class="searchbox">
+        <input type="text" class="searchtxt" placeholder="Find something...">
+        <a class="searchbtn" href="#"><img src="img/search-solid.svg" 
+            style="width: 20px; height: 20px;"></a>
+    </div>
+
+    <div class="opening_bg">
+        <div class="container">
+            <p style="margin-top: 0px;">Feel the experience of designing a web in an easy, simple, and free way with unlimited 
+                creativity. Only limited by your creativity.</p>
+            <button class="button3">Try now</button>
+        </div>
+    </div>
+
+    <div id="projek" class="project_bg">
+        <h2 class="judul_box" style="color: black; font-weight: lighter; font-size: 50px; 
+        margin-left: 140px; margin-top: 60px;">Projects</h2>
+
+        <img class="desain_box" style="position: absolute; top: 190px;
+        left: 120px;" src="img/divi6-1.jpg">
+        <h6 class="detail2" style="position: absolute; top: 380px;
+        left: 140px; font-size: 13px;">New</h6>
+        <h5 class="detail" style="position: absolute; top: 415px;
+        left: 140px; font-size: 13px;">Lorem ipsum dolor, sit amet consectetur</h5>
+
+        <img class="desain_box" style="position: absolute; top: 190px;
+        left: 500px;" src="img/15_awesome-websites.jpg">
+        <h6 class="detail2" style="position: absolute; top: 380px;
+        left: 520px; font-size: 13px;">New</h6>
+        <h5 class="detail" style="position: absolute; top: 415px;
+        left: 520px; font-size: 13px;">Lorem ipsum dolor, sit amet consectetur</h5>
+
+        <img class="desain_box" style="position: absolute; top: 190px;
+        right: 120px;" src="img/v2-zopim-com-52981.png">
+        <h6 class="detail2" style="position: absolute; top: 380px;
+        right: 140px; font-size: 13px;">New</h6>
+        <h5 class="detail" style="position: absolute; top: 415px;
+        right: 140px; font-size: 13px;">Lorem ipsum dolor, sit amet consectetur</h5>
+
+        <img class="desain_box" style="position: absolute; top: 520px;
+        left: 120px;" src="img/website-design-inspiration-3.png">
+        <h6 class="detail2" style="position: absolute; top: 710px;
+        left: 140px; font-size: 13px;">New</h6>
+        <h5 class="detail" style="position: absolute; top: 745px;
+        left: 140px; font-size: 13px;">Lorem ipsum dolor, sit amet consectetur</h5>
+
+        <img class="desain_box" style="position: absolute; top: 520px;
+        left: 500px;" src="img/indicius.com-3.jpg">
+        <h6 class="detail2" style="position: absolute; top: 710px;
+        left: 520px; font-size: 13px;">New</h6>
+        <h5 class="detail" style="position: absolute; top: 745px;
+        left: 520px; font-size: 13px;">Lorem ipsum dolor, sit amet consectetur</h5>
+
+        <img class="desain_box" style="position: absolute; top: 520px;
+        right: 120px;" src="img/561a8b7e8cbe51c72c18f4ef0dc72676.png">
+        <h6 class="detail2" style="position: absolute; top: 710px;
+        right: 140px; font-size: 13px;">New</h6>
+        <h5 class="detail" style="position: absolute; top: 745px;
+        right: 140px; font-size: 13px;">Lorem ipsum dolor, sit amet consectetur</h5>
+
+        <button class="button4">View More</button>
+
+    </div>
+
+    <div id="tentang" class="about_bg">
+        <h2 class="judul_box" style="color: white; font-weight: lighter; font-size: 50px; 
+        margin-left: 140px; margin-top: 60px;">About Me</h2>
+        <div class="profile">
+            <img src="img/profile-serious-woman-with-healthy-pure-skin-has-bushy-hairstyle_273609-44522(1).jpg" style="width: 380px; height: 400px; position: absolute;
+            top: 0px; left: 0px; border-radius: 50%;">
+            <div class="nama"><h1 style="margin-left: 0px; margin-top: 0px;">Hello! I am My Nickname is here</h1></div>
+            <div class="desc"><p style="margin-top: 0px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit, voluptate ullam placeat 
+                laborum error reiciendis libero. Ad id fugit sunt reprehenderit, magni delectus beatae nihil minus asperiores 
+                numquam aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum velit vitae unde qui accusantium 
+                non atque natus facilis recusandae.</p></div>
+        </div>
+    </div>
+
+    <footer id="kontak" class="footer">
+        <h2 class="judul_box" style="color: black; font-weight: lighter; font-size: 50px; 
+        margin-left: 140px; margin-top: 20px;">My Contact</h2>
+
+        <h4 style="position: absolute; top: 1px; left: 570px;">Social Media</h4>
+        <ul style="position: absolute; top: 35px; left: 550px;">
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>LinkedIn</li>
+            <li>Line</li>
+        </ul>
+
+        <h4 style="position: absolute; top: 1px; right: 440px;">Personal</h4>
+        <ul style="position: absolute; top: 35px; right: 420px;">
+            <li>Email</li>
+            <li>WhatsApp</li>
+            <li>Telegram</li>
+        </ul>
+
+        <h4 style="position: absolute; right: 0px; bottom: -1px; font-style: italic; font-size: 13px;">
+            Copyright &copy; 2021 Design by @raihaniqbalpasya</h4>
+    </footer>
+</body>
+</html>
