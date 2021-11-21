@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <p>Jika di klik kotak dibawah akan bergerak</p>
+
+    <button>Click</button>
+    <br> <br>
+    <div style="background: red; height:100px; width:100px; position:absolute;">Animasi</div>
+
+    <script>
+        //menggunakan jquery animasi untuk mengubah posisi dan luas kotak serta ukuran font
+        $("button").on("click",function(){
+            var a = $("div");
+            a.animate({left : '450px'} , 1000)
+            a.animate({top : '200px'}, 1000)
+            a.animate({width : '500px'}, 1000)
+            a.animate({height : '300px'}, 1000)
+            a.animate({fontSize : '7rem'}, 1000)
+        })
+    </script>
+</body>
+</html>

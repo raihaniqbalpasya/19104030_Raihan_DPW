@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th><h2>Hide Me! </h2></th>
+            <th><h2>Me too! </h2></th>
+            <th><h2>And me too! </h2></th>
+            <th><h2>Click Me! </h2></th>
+            <th><h2 id="chain">Don't hide me :(</h2></th>
+        </tr>
+    </table>
+
+    <br>
+    <h4>This input form was so big </h4>
+    <input type="text" name="nama" id="nama">
+
+
+    <script>
+        //jika h2 di klik maka ia akan menghilang
+        $("h2").click(function(){
+            $(this).hide();
+            //h2 yang memiliki id = chain akan menghilang dan kembali setiap kali di klik
+            $("#chain").hide(1000).show(1000);
+        })
+
+        //teks input akan memanjang 400 px jika didekati
+        $("#nama").hover(function(){
+            $(this).css("width","400px");
+            //teks input akan memanjang 1200px dan melebar sebesar 500px jika di klik
+            $("#nama").click(function(){
+                $(this).css("height","500px").css("width","1200px");
+            })
+        })
+    </script>
+</body>
+</html>

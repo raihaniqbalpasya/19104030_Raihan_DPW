@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4 JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        .warna{
+            color: white;
+            
+        }
+
+        .backg{
+            background-color: orange;
+        }
+    </style>
+
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia aliquam odio asperiores, dignissimos debitis, omnis alias nihil mollitia enim rerum sint qui non nam saepe quaerat reiciendis. Libero, voluptatibus ipsa.</h1>
+
+    <button id="color">Ganti Warna Teks</button>
+    <button id="bg">Ganti Warna Background</button>
+    <button id="slide">Slide</button>
+    <button id="stop">Berhenti</button>
+
+    <script>
+        //mengubah warna teks menggunakkan class
+        $("#color").on("click",function(){
+            $("h1").addClass("warna");
+        })
+
+        //mengubah warna background menggunakkan class
+        $("#bg").on("click",function(){
+            $("h1").addClass("backg");
+        })
+
+        //melakukan sliding membuka dan menutup
+        $("#slide").on("click",function(){
+            $("h1").slideToggle(4000);
+        })
+
+        //memberhentikan sliding
+        $("#stop").on("click",function(){
+            $("h1").stop();
+        })
+    </script>
+</body>
+</html>
