@@ -2,4 +2,12 @@
 
 ## Link Website yang sudah dihosting
 
-(http://raihaniqbal.inyonghost.com/).
+beranda : (http://raihaniqbal.inyonghost.com/).
+
+Melihat data mahasiswa : (https://raihaniqbal.inyonghost.com/mahasiswa).
+
+## Link Postman API
+
+()
+
+
