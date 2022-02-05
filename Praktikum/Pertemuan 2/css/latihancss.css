@@ -1,0 +1,12 @@
+.tb{
+    border-collapse: collapse;
+    width: 200px;
+}
+
+.tb tr:nth-child(odd){
+    background-color: blue;
+}
+
+.tb tr:nth-child(even){
+    background-color: red;
+}
