@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JS 1</title>
+</head>
+<body>
+    <script>
+        //contoh 1
+        alert("Selamat belajar!");
+
+        //contoh 2
+        let bill1 = 5;
+        let bill2 = 2;
+
+        hasil = bill1 + bill2;
+        alert(hasil);
+
+        //contoh 3
+        let x = 10;
+        x+=5;
+        console.log(x);
+
+        //contoh 4
+        let umur = 40;
+        if (umur <= 20){
+            console.log("anak-anak");
+        } else{
+            console.log("dewasa");
+        }
+
+        //contoh 5 (percabangan)
+        let nilai = 96;
+        if(nilai >= 80){
+            alert("Nilai A");
+        } else if (nilai >= 70 && nilai < 80){
+            alert("Nilai B");
+        } else if(nilai >= 60 && nilai < 70){
+            alert("Nilai C");
+        } else {
+            alert("Nilai D");
+        }
+
+        //contoh 5 (perulangan)
+        for (let i = 1; i < 5; i++) {
+            console.log(i);
+        }
+    </script>
+
+    <!-- contoh 6 -->
+    <script>
+        function tampil(){
+            alert("Halo");
+        }
+    </script>
+
+    <button onclick="tampil()">Halo</button>
+
+    <!-- contoh 7 -->
+    <br> <br>
+    <form name="warna">
+        <table>
+            <tr>
+                <input type="radio" name="C1" 
+                onclick="document.bgColor='lightblue'">
+                biru muda <br>
+                <input type="radio" name="C2"
+                onclick="document.bgColor='yellow'">
+                kuning <br>
+                <input type="radio" name="C3"
+                onclick="document.bgColor='red'">
+                merah
+            </tr>
+        </table>
+    </form>
+
+    <!-- contoh 8 -->
+    <br> <br>
+    <script>
+        let message="Welcome to my site"
+        document.write(message.toUpperCase().bold())
+    </script>
+
+    <!-- contoh 9 -->
+    <br> <br>
+    <form name="test" onsubmit="checkemail(this.test2.value);
+    return false">
+    <input type="text" size="20" name="test2">
+    <input type="submit" value="Submit Email">
+    </form>
+
+    <script type="text/javascript">
+        function checkemail(email){
+            if(email.indexOf("@") !=-1 && email.indexOf(".") !=-1)
+            alert("Apakah Alamat Email Sudah Benar?")
+            else
+            alert("Penulisan Email Salah!")
+        }
+    </script>
+    
+    <!-- contoh 10 -->
+    <br> <br>
+    <script>
+        function bukawindow(){
+            window.open("http://www.google.com","google","width=400,height=300,toolbar=1");
+        }
+    </script>
+    <input type="button" onclick="bukawindow()" value="Open Google">
+
+    <!-- contoh 11 -->
+    <script type="text/javascript">
+        let p=window.confirm("Silahkan dipilih")
+        if(p)
+        window.alert("Anda memilih OK")
+        else
+        window.alert("Anda memilih Cancel")
+    </script>
+
+    <!-- contoh 12 -->
+    <script type="text/javascript">
+        let nama = window.prompt("Masukkan nama anda")
+        window.alert("Selamat datang " + nama + " !")
+    </script>
+</body>
+</html>
