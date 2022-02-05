@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3 JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div style="background-color: rgb(149, 96, 199);">
+        <h1>Kalkulator Sederhana</h1>
+        <br>
+    
+        <input type="number" name="bil1" id="bil1">
+        <input type="number" name="bil2" id="bil2">
+    
+        <input type="button" value="tambah" id="plus">
+        <input type="button" value="kurang" id="minus">
+        <input type="button" value="kali" id="multi">
+        <input type="button" value="bagi" id="divide">
+    
+        <script>
+            //fungsi untuk melakukan penjumlahan
+            $("#plus").on("click",function(){
+                let bil1 = $("#bil1").val();
+                let bil2 = $("#bil2").val();
+    
+                let hasil = parseInt(bil1) + parseInt(bil2);
+    
+                alert("Hasil : " + hasil)
+            })
+    
+            //fungsi untuk melakukan pengurangan
+            $("#minus").on("click",function(){
+                let bil1 = $("#bil1").val();
+                let bil2 = $("#bil2").val();
+    
+                let hasil = parseInt(bil1) - parseInt(bil2);
+    
+                alert("Hasil : " + hasil)
+            })
+
+            //fungsi untuk melakukan perkalian
+            $("#multi").on("click",function(){
+                let bil1 = $("#bil1").val();
+                let bil2 = $("#bil2").val();
+    
+                let hasil = parseInt(bil1) * parseInt(bil2);
+    
+                alert("Hasil : " + hasil)
+            })
+    
+            //fungsi untuk melakukan pembagian
+            $("#divide").on("click",function(){
+                let bil1 = $("#bil1").val();
+                let bil2 = $("#bil2").val();
+    
+                let hasil = parseInt(bil1) / parseInt(bil2);
+    
+                alert("Hasil : " + hasil)
+            })
+        </script>
+    </div>
+</body>
+</html>
